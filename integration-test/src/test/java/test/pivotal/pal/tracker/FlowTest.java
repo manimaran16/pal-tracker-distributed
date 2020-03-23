@@ -26,7 +26,7 @@ public class FlowTest {
     private ApplicationServer timesheetsServer = new ApplicationServer(workingDir + "/../applications/timesheets-server/build/libs/timesheets-server.jar", "8884");
 
     private String registrationServerUrl(String path) {
-        return "http://registration-server" + path;
+        return "http://localhost:8883" + path;
     }
 
     private String allocationsServerUrl(String path) {
