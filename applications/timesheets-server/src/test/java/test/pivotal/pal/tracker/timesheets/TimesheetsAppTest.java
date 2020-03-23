@@ -2,10 +2,11 @@ package test.pivotal.pal.tracker.timesheets;
 
 import io.pivotal.pal.tracker.timesheets.App;
 import org.junit.Test;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.client.RestTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
+@EnableEurekaClient
 public class TimesheetsAppTest {
 
     @Test
